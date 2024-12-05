@@ -1,0 +1,209 @@
+/* Reset dasar */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+input,
+button,
+table {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+}
+
+/* Kontainer utama */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h1,
+h2 {
+  color: #444;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Link */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* Form */
+form {
+  margin-bottom: 20px;
+}
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #0056b3;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="date"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+input[type="date"]:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+  outline: none;
+}
+
+option {
+  padding: 10px;
+  font-size: 16px;
+}
+
+/* Tabel */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+table th {
+  background-color: #007bff;
+  color: white;
+}
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Pencarian */
+#keyword {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Pesan error */
+.error {
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Navigasi */
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+ul li {
+  margin: 0 10px;
+}
+ul li a {
+  padding: 10px 15px;
+  background: #007bff;
+  color: white;
+  border-radius: 4px;
+}
+ul li a:hover {
+  background: #0056b3;
+}
+
+.btn-aksi {
+  text-align: center;
+  padding: 10px;
+  display: flex;
+  height: 100%;
+  gap: 10px;
+}
+
+.btn-aksi a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-aksi a.edit {
+  background-color: #3498db;
+}
+
+.btn-aksi a.edit:hover {
+  background-color: #2980b9;
+}
+
+.btn-aksi a.hapus {
+  background-color: #e74c3c;
+}
+
+.btn-aksi a.hapus:hover {
+  background-color: #c0392b;
+}
